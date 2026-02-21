@@ -1,0 +1,17 @@
+/* Basic reset to ensure App.css takes precedence */
+:root {
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}
