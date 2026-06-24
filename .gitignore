@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Environment Variables
+.env
+
+# React/Vite
+node_modules/
+dist/
+
+# Testing files
+test_*.py
+test_out.txt
+models.txt
+sample_response.json

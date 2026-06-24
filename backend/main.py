@@ -25,7 +25,7 @@ API_KEY = os.getenv("GEMINI_API_KEY")
 if API_KEY:
     genai.configure(api_key=API_KEY)
     # Use a supported Gemini model ID from the current account
-    model = genai.GenerativeModel("models/gemini-flash-latest")
+    model = genai.GenerativeModel("models/gemini-2.5-flash")
 else:
     print("WARNING: GEMINI_API_KEY not found in environment variables.")
 
@@ -54,7 +54,7 @@ async def generate_plan(profile: UserProfile):
         raise HTTPException(status_code=500, detail="Gemini API Key not configured")
 
     genai.configure(api_key=current_api_key)
-    active_model = genai.GenerativeModel("models/gemini-flash-latest")
+    active_model = genai.GenerativeModel("models/gemini-2.5-flash")
 
     prompt = f"""
     You are a certified AI fitness coach.
