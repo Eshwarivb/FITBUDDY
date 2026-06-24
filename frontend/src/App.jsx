@@ -31,7 +31,7 @@ function App() {
     setStep('loading');
 
     try {
-      const response = await fetch('http://localhost:8001/generate-plan', {
+      const response = await fetch('https://fitbuddyy.onrender.com/generate-plan', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
